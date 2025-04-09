@@ -8,7 +8,28 @@
 
 import UIKit
 
-public class SpreadsheetView: UIView {
+open class SpreadsheetView: UIView {
+    
+    public func getColumnView()->UIScrollView{
+        let t = self.columnHeaderView
+        return t
+    }
+    
+    public func getRowView()->UIScrollView{
+        let t = self.rowHeaderView
+        return t
+    }
+    
+    public func getTableView()->UIScrollView{
+        let t = self.tableView
+        return t
+    }
+    
+    public func getRootView()->UIScrollView{
+        let t = self.rootView
+        return t
+    }
+    
     /// The object that provides the data for the collection view.
     ///
     /// - Note: The data source must adopt the `SpreadsheetViewDataSource` protocol.

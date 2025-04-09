@@ -9,7 +9,7 @@
 import UIKit
 
 extension SpreadsheetView: UIScrollViewDelegate {
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         rowHeaderView.delegate = nil
         columnHeaderView.delegate = nil
         tableView.delegate = nil
